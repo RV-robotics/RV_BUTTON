@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"rv_button\startup_stm32f410rx.o"
+"rv_button\main.o"
+"rv_button\stm32f4xx_it.o"
+"rv_button\stm32f4xx_hal_msp.o"
+"rv_button\stm32f4xx_hal_tim.o"
+"rv_button\stm32f4xx_hal_tim_ex.o"
+"rv_button\stm32f4xx_hal_rcc.o"
+"rv_button\stm32f4xx_hal_rcc_ex.o"
+"rv_button\stm32f4xx_hal_flash.o"
+"rv_button\stm32f4xx_hal_flash_ex.o"
+"rv_button\stm32f4xx_hal_flash_ramfunc.o"
+"rv_button\stm32f4xx_hal_gpio.o"
+"rv_button\stm32f4xx_hal_dma_ex.o"
+"rv_button\stm32f4xx_hal_dma.o"
+"rv_button\stm32f4xx_hal_pwr.o"
+"rv_button\stm32f4xx_hal_pwr_ex.o"
+"rv_button\stm32f4xx_hal_cortex.o"
+"rv_button\stm32f4xx_hal.o"
+"rv_button\system_stm32f4xx.o"
+"rv_button\rv_button.o"
+--library_type=microlib --strict --scatter "RV_BUTTON\RV_BUTTON.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RV_BUTTON.map" -o RV_BUTTON\RV_BUTTON.axf
